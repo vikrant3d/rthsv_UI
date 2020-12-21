@@ -1,4 +1,5 @@
 var slideIndex = 0;
+var timeoutvar;
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -13,5 +14,12 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "contents";  
   dots[slideIndex-1].className += " active1";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  timeoutvar = setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function plusImage(index){
+	stopSlideShow();
+	showSlides(parseInt(index) + parseInt(slideIndex));
+}
+function stopSlideShow() {
+  clearTimeout(timeoutvar);
 }
