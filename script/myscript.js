@@ -9,6 +9,7 @@ function showSlides() {
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex == 0) {slideIndex = slides.length}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active1", "");
   }
@@ -18,7 +19,8 @@ function showSlides() {
 }
 function plusImage(index){
 	stopSlideShow();
-	showSlides(parseInt(index) + parseInt(slideIndex));
+	slideIndex = parseInt(index) + parseInt(slideIndex) -1;
+	showSlides();
 }
 function stopSlideShow() {
   clearTimeout(timeoutvar);
