@@ -180,7 +180,7 @@ label {
 }
 button {
     border: none;
-}
+}/*
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     background-color: #f2f2f2;
     border: none;
@@ -194,7 +194,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding: 4px 6px;
     vertical-align: middle;
     box-shadow: none;
-}
+}*/
 input[type="submit"] {
     outline: none;
 }
@@ -366,7 +366,7 @@ address { font-style: italic; }
     width: 100%;
     background-color: #ffffff;
 }
-.modal-dialog { width: 1170px; }
+/*.modal-dialog { width: 1170px; }*/
 .modal-body {
     padding: 37px 35px 21px 35px;
     display: inline-block;
@@ -7723,7 +7723,8 @@ aside .widget {
 }
 .wm-student-nav {
     background-color: #f7f7f7;
-    padding: 38px 42px;
+    padding: 22px 13px;
+	border-radius: 15px;
 }
 .wm-student-nav figure {
     float: left;
