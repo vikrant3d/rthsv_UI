@@ -181,20 +181,7 @@ label {
 button {
     border: none;
 }
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-    background-color: #f2f2f2;
-    border: none;
-    box-sizing: border-box;
-    color: #aaa9a9;
-    display: inline-block;
-    font-size: 13px;
-    height: 30px;
-    line-height: 20px;
-    outline: none;
-    padding: 4px 6px;
-    vertical-align: middle;
-    box-shadow: none;
-}
+
 input[type="submit"] {
     outline: none;
 }
@@ -7723,7 +7710,8 @@ aside .widget {
 }
 .wm-student-nav {
     background-color: #f7f7f7;
-    padding: 38px 42px;
+    padding: 22px 13px;
+	border-radius: 15px;
 }
 .wm-student-nav figure {
     float: left;

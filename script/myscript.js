@@ -92,3 +92,30 @@ function displayNoticeData(obj){
 		$("#noticeDisplay").html("<h1> No Notice is available </h1>");
 	return false;
 }
+
+function viewStudentResult(obj){
+	$(obj).attr('disabled',true);
+	$(obj).val('Please Wait ....');
+	if($("#seatNo").val() == ""){
+		alert("Please enter valid Seat No");
+		return false;
+	}
+	$.ajax({
+	  type: 'POST',
+	  data: '{"seatNo":"'+$("#seatNo").val()+'"}',	
+	  url: contextPathStud +"getStudentResult",
+	  success: function (respone1) { 
+			$("#resultSection").show();
+			$(obj).attr('disabled',false);
+			$(obj).val('View Results');
+			$("#resultDetails").html("<ul><li>Hi "+$(respone1).attr('studName')+"</li><li>Studying in class: "+$(respone1).attr('classFor')+"</li><li>You result: <b style='color:red'>"+$(respone1).attr('result')+"</b></li><li>Having class: "+$(respone1).attr('passingClass')+"</li></ul>");
+		},
+	  error : function (response) { 
+			alert("No Record Found! Please enter valid Seat No.");
+			$(obj).attr('disabled',false);
+			$(obj).val('View Results');
+			}
+	});
+	return false;	
+	
+}

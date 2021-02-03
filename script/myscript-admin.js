@@ -21,6 +21,7 @@ function uploadStudentData(obj){
 			alert(response1);
 			$(obj).attr('disabled',false);
 			$(obj).val('Upload Students Details');
+			$('#jsonDataUpload').val('')
 		},
 	  error: function (response1) { 
 			alert("Please enter Valid JSON Data");
@@ -31,6 +32,40 @@ function uploadStudentData(obj){
 	});	
 	return false;
 	
+}
+
+function uploadStudentResult(obj){
+	if($('#jsonDataUpload').val().trim() == ""){
+		alert("Please enter valid JSON Data");
+		return false;
+	}
+	$(obj).attr('disabled',true);
+	$(obj).val('Please Wait ....');
+	var str = "";
+	$.each($('#jsonDataUpload').val().split(/\n/), function(i, line){
+		   if(line && line.length){
+			  str = str + line.trim();
+		   }
+		});	
+	var jsonStr = '{"token":"'+sessionStorage.getItem("rthsv_token")+'","jsonDataUpload":'+str+'}';
+	$.ajax({
+	  type: 'POST',
+	  data: jsonStr,
+	  url: contextPath +"updateStudentResult",
+	  success: function (response1) { 
+			alert(response1);
+			$(obj).attr('disabled',false);
+			$(obj).val('Upload Student Results');
+			$('#jsonDataUpload').val('');
+		},
+	  error: function (response1) { 
+			alert("Please enter Valid JSON Data");
+			$(obj).attr('disabled',false);
+			$(obj).val('Upload Students Details');
+			validateFail(response);
+		}
+	});	
+	return false;
 }
 
 function fetchStudentData(obj){
