@@ -401,15 +401,15 @@
             }
             x[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " w3-white";
-            //setTimeout(slideShow, 2000); // Change image every 2 seconds
+            setTimeout(slideShow, 2000); // Change image every 2 seconds
         }
 
         function plusDivs(n) {
-            showDivs(slideIndex += n);
+            //showDivs(slideIndex += n);
         }
 
         function currentDiv(n) {
-            showDivs(slideIndex = n);
+            //showDivs(slideIndex = n);
         }
 
         function showDivs(n) {
