@@ -30,6 +30,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        .btn-result {
+            background-color: #b99663;
+            border: 1px solid #9d7f53;
+            color: #ffffff;
+            /* width: 30%; */
+            font-size: 16px;
+            margin: 0px;
+            padding: 5px 19px 6px 20px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -38,7 +51,7 @@
     <div class="wm-main-wrapper">
 
         <!--// Header \\-->
-         <div id="headerSec"></div>
+        <div id="headerSec"></div>
         <!--// Header \\-->
 
         <!--// Mini Header \\-->
@@ -52,7 +65,7 @@
                         </div>
                         <div class="wm-breadcrumb">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="./index.html">Home</a></li>
                                 <li>Exam Results</li>
                             </ul>
                         </div>
@@ -63,59 +76,78 @@
         <!--// Mini Header \\-->
 
         <!--// Main Content \\-->
-        			<!--// Main Section \\-->
-			<div class="wm-main-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							<div class="row">
-								<h3 class="title-wthree mb-lg-5 mb-4 text-center">View your Result</h3><br>
-							</div>						    
-						
-							<div class="row">
-								<div class="form-group name1 col-md-12">
-									<label for="exampleInputEmail1" class="formText">Enter your seat No:</label>
-									<input type="text" name="seatNo" id="seatNo" class="form-control" />
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group col-md-6" style="text-align:right">
-									<input type="button" value="View Results" class="btn btn-primary" onclick="return viewStudentResult(this)">
-								</div>
-							</div> 	
+        <div class="wm-main-content">
 
-							<div class="row" id="resultSection" style="display:none;">
-								<div class="form-group col-md-6" style="text-align:right">
-									<label for="exampleInputEmail1" class="formText">Below are your results details:</label>
-									<div id="resultDetails"></div>
-								</div>
-							</div> 									
-						</div>
-					</div>
-				</div>
-			</div>
+            <!--// Main Section \\-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="wm-title-typoelements">
+                        <h2>College <span>Exam Results</span></h2>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="wm-form-wrap wm-typography-element">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="wm-form-listing">
+                                        <li class="wm-label-sec">Candidate Seat No.</li>
+                                        <li><input type="text" name="seatNo" id="seatNo"></li>
+                                        <li class="wm-label-sec">&nbsp;</li>
+                                        <li><input type="button" class="btn-result" onclick="viewStudentResult(this)"
+                                                value="Show Result" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" id="resultSection" hidden>
+                        <div class="col-md-12 wm-form-wrap wm-typography-element">
+                            <h3>You exam resulls find below:</h3>
+                            <ul class="wm-form-listing ">
+                                <li class="wm-label-sec">Exam Seat No. :</li>
+                                <li id="lblSeatNo">&nbsp;</li>
+                                <li class="wm-label-sec">Candidate Name</li>
+                                <li id="lblCandName">&nbsp;</li>
+                                <li class="wm-label-sec">Studying Class</li>
+                                <li id="lblStCls">&nbsp;</li>
+                                <li class="wm-label-sec">Result</li>
+                                <li id="lblRes">&nbsp;</li>
+                                <li class="wm-label-sec">Grade</li>
+                                <li id="lblGrd">&nbsp;</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--// Main Section \\-->
+
+        </div>
         <!--// Main Content \\-->
 
         <!--// Footer \\-->
-           <div id="footerSec"></div>
-   
+        <div id="footerSec"></div>
 
-    <!-- jQuery (necessary for JavaScript plugins) -->
-    <script type="text/javascript" src="./script/jquery.js"></script>
-    <script type="text/javascript" src="./script/modernizr.js"></script>
-    <script type="text/javascript" src="./script/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./script/jquery.prettyphoto.js"></script>
-    <script type="text/javascript" src="./script/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="./script/fitvideo.js"></script>
-    <script type="text/javascript" src="./script/skills.js"></script>
-    <script type="text/javascript" src="./script/slick.slider.min.js"></script>
-    <script type="text/javascript" src="./script/waypoints-min.js"></script>
-    <script type="text/javascript" src="./build/mediaelement-and-player.min.js"></script>
-    <script type="text/javascript" src="./script/isotope.min.js"></script>
-    <script type="text/javascript" src="./script/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="./script/functions.js"></script>
-	<script type="text/javascript" src="script/commonhtml.js" ></script>
-	<script type="text/javascript" src="script/myscript.js" ></script>
+
+        <!-- jQuery (necessary for JavaScript plugins) -->
+        <script type="text/javascript" src="./script/jquery.js"></script>
+        <script type="text/javascript" src="./script/modernizr.js"></script>
+        <script type="text/javascript" src="./script/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./script/jquery.prettyphoto.js"></script>
+        <script type="text/javascript" src="./script/jquery.countdown.min.js"></script>
+        <script type="text/javascript" src="./script/fitvideo.js"></script>
+        <script type="text/javascript" src="./script/skills.js"></script>
+        <script type="text/javascript" src="./script/slick.slider.min.js"></script>
+        <script type="text/javascript" src="./script/waypoints-min.js"></script>
+        <script type="text/javascript" src="./build/mediaelement-and-player.min.js"></script>
+        <script type="text/javascript" src="./script/isotope.min.js"></script>
+        <script type="text/javascript" src="./script/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="./script/functions.js"></script>
+        <script type="text/javascript" src="script/commonhtml.js"></script>
+        <script type="text/javascript" src="script/myscript.js"></script>
 
 
 </body>

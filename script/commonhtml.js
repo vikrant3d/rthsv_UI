@@ -1,6 +1,8 @@
 var inner = document.getElementById("inner");
 var imgpt = inner == null ? "." : "..";
-$("#headerSec").html('<header id="wm-header" class="wm-header-one">'+
+const head = 'Janardan Bhagat Shikshan Prasarak Sanstha&acute;s';
+const title='Ramsheth Thakur Higher Secondary Vidyalay,Kharghar (Commerce &amp; Science)';
+$("#headerSec").html('<header id="wm-header" class="wm-header-one" style="z-index: 1 !important;position: relative;">'+
             '<div class="wm-topstrip">'+
                 '<div class="container">'+
                     '<div class="row">'+
@@ -21,7 +23,7 @@ $("#headerSec").html('<header id="wm-header" class="wm-header-one">'+
             '<div class="wm-main-header">'+
                 '<div class="container">'+
                     '<div class="row">'+
-                        '<div class="col-md-1"><a href="'+imgpt+'/index.html" class="wm-logo"><img src="'+imgpt+'/images/Logo.PNG" alt="" width="100px"></a></div>'+
+                        '<div class="col-md-2"><a href="'+imgpt+'/index.html" class="wm-logo"><img src="'+imgpt+'/images/Logo.PNG" alt="'+title+'" title="'+title+'" width="100px"></a></div>'+
                         '<div class="col-md-10">'+
                             '<nav class="navbar navbar-default">'+
                                 '<div class="navbar-header">'+
