@@ -52,6 +52,7 @@ function getAllActiveNotices() {
 		success: function (response1) {
 			noticeList = response1;
 			displayNoticeData($("#common"));
+			console.log(noticeList);
 		},
 		error: function (response) {
 			alert("Error while download data");
@@ -60,15 +61,40 @@ function getAllActiveNotices() {
 	return false;
 }
 
+$(function (event) {
+	$('#common').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#FYJC_Science').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#SYJC_Science').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#FYJC_Commerce').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#SYJC_Commerce').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#Non-Teaching_Staff').click(function () {
+		displayNoticeData($(this));
+	});
+	$('#Teaching_Staff').click(function () {
+		displayNoticeData($(this));
+	});
+});
+
 function displayNoticeData(obj) {
 	var isNotice = 1;
-	var notCnt = 0;
-	$("#leftPanelUL li").removeClass('active');
-	$(obj).parent().addClass("active");
-	$("#classType").html($(obj).html().trim().substr(27).trim());
+	var notCnt = 0;	
+	//$("#leftPanelUL li").removeClass('active');
+	//$(obj).parent().addClass("active");
+	//$("#classType").html($(obj).html().trim().substr(27).trim());
 	$("#noticeDisplay").html("");
 	$(noticeList).each(function (i, notice) {
 		if ($(obj).attr('id') == $(notice).attr('classFor')) {
+			$("#classType").html($(notice).attr('noticeSub'));
 			if (isNotice == 1) {
 				$("#noticeDisplay").html("<div class='loader' style='margin-top:70px'></div>");
 			}
@@ -79,7 +105,10 @@ function displayNoticeData(obj) {
 				url: contextPathStud + "downloadNotice",
 				success: function (response1) {
 					$("#noticeDisplay").find(".loader").remove();
-					$("#noticeDisplay").append("<h2>Notice No." + (++notCnt) + " : " + $(notice).attr('noticeSub') + "</h2><iframe width='100%' style='margin-bottom: 60px;' height='100%' src='data:application/pdf;base64, " + response1 + "'></iframe>");
+					$("#noticeDisplay").append('<div class="wm-typo-title"><h5>Subject : <span>Test Notice</span></h5></div>');
+					//$("#noticeDisplay").append('<h5>Subject : <span>Test Notice</span></h5>');
+					//$("#noticeDisplay").append('</div>');
+					$("#noticeDisplay").append("<iframe width='100%' style='margin-bottom: 60px;' height='100%' src='data:application/pdf;base64, " + response1 + "'></iframe>");
 				},
 				error: function (response) {
 					alert("Error while download data");
@@ -89,7 +118,7 @@ function displayNoticeData(obj) {
 		}
 	});
 	if (isNotice == 1)
-		$("#noticeDisplay").html("<h1> No Notice is available </h1>");
+		$("#noticeDisplay").html("<h1 class=\"text-center\"> No Notice is available </h1>");
 	return false;
 }
 

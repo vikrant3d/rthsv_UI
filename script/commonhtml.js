@@ -2,6 +2,19 @@ var inner = document.getElementById("inner");
 var imgpt = inner == null ? "." : "..";
 const head = 'Janardan Bhagat Shikshan Prasarak Sanstha&acute;s';
 const title='Ramsheth Thakur Higher Secondary Vidyalay,Kharghar (Commerce &amp; Science)';
+const menus =[{name:'Home',link:'/index.html',active:''},
+              {name:'Admission',link:'/admission.html',active:''},
+              {name:'Student Info',link:'',active:'',hasChild:true},
+              {name:'Notices',link:'/Notices.html',active:''},
+              {name:'Exam Result',link:'/ExamResult.html',active:''},
+              {name:'Contact Us',link:'/contact-us.html',active:''},
+              {name:'About Us',link:'',active:'',hasChild:true},
+              {name:'About College',link:'/about-us.html',active:''},
+              {name:'Our Inspiration',link:'/our-inspiration.html',active:''},
+              {name:'Board Of Executive',link:'/board-of-executive.html',active:''},
+              {name:'Rules Page',link:'/rules-page.html',active:''},
+              {name:'FAQs',link:'/faq-page.html',active:''}]; 
+
 $("#headerSec").html('<header id="wm-header" class="wm-header-one" style="z-index: 1 !important;position: relative;">'+
             '<div class="wm-topstrip">'+
                 '<div class="container">'+
@@ -36,24 +49,24 @@ $("#headerSec").html('<header id="wm-header" class="wm-header-one" style="z-inde
                                 '</div>'+
                                 '<div class="collapse navbar-collapse" id="navbar-collapse-1">'+
                                     '<ul class="nav navbar-nav">'+
-                                        '<li class="active"><a href="'+imgpt+'/index.html">Home</a></li>'+
-                                        '<li class=""><a href="'+imgpt+'/adminission.html">Admission</a></li>'+
-										'<li class="active"><a href="javascript:void(0);">Student Info</a>'+
+                                        '<li class="" page="Home"><a href="'+imgpt+'/index.html">Home</a></li>'+
+                                        '<li class="" page="Admission"><a href="'+imgpt+'/admission.html">Admission</a></li>'+
+										'<li class="" page="Student Info"><a href="javascript:void(0);">Student Info</a>'+
                                             '<ul class="wm-dropdown-menu">'+
-                                                '<li><a href="'+imgpt+'/Notices.html">Notice Board</a></li>'+
-                                                '<li><a href="'+imgpt+'/ExamResult.html">Exam Results</a></li>'+
+                                                '<li page="Notices"><a href="'+imgpt+'/Notices.html">Notice Board</a></li>'+
+                                                '<li page="Exam Result"><a href="'+imgpt+'/ExamResult.html">Exam Results</a></li>'+
                                             '</ul>'+
                                         '</li>'+
-										'<li class=""><a href="'+imgpt+'/contact-us.html">Contact Us</a></li>'+
-                                        '<li class="active"><a href="javascript:void(0);">About Us</a>'+
+										'<li class="" page="Contact Us"><a href="'+imgpt+'/contact-us.html">Contact Us</a></li>'+
+                                        '<li class="" page="About Us"><a href="javascript:void(0);">About Us</a>'+
                                             '<ul class="wm-dropdown-menu">'+
-                                                '<li><a href="'+imgpt+'/about-us.html">About College</a></li>'+
-                                                '<li><a href="'+imgpt+'/our-inspiration.html">Our Inspiration</a></li>'+
-                                                '<li><a href="'+imgpt+'/board-of-executive.html">Board Of Executive</a></li>'+
+                                                '<li page="About College"><a href="'+imgpt+'/about-us.html">About College</a></li>'+
+                                                '<li page="Our Inspiration"><a href="'+imgpt+'/our-inspiration.html">Our Inspiration</a></li>'+
+                                                '<li page="Board Of Executive"><a href="'+imgpt+'/board-of-executive.html">Board Of Executive</a></li>'+
                                             '</ul>'+
                                         '</li>'+
-                                        '<li class=""><a href="'+imgpt+'/rules-page.html">Rules &amp; Regulations </a></li>'+
-                                        '<li class=""><a href="'+imgpt+'/faq-page.html">FAQ&acute;s</a></li>'+
+                                        '<li class="" page="Rules Page"><a href="'+imgpt+'/rules-page.html">Rules &amp; Regulations </a></li>'+
+                                        '<li class="" page="FAQs"><a href="'+imgpt+'/faq-page.html">FAQ&acute;s</a></li>'+
                                     '</ul>'+
                                 '</div>'+
                             '</nav>'+
