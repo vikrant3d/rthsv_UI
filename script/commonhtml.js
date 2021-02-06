@@ -15,7 +15,17 @@ const menus =[{name:'Home',link:'/index.html',active:''},
               {name:'Rules Page',link:'/rules-page.html',active:''},
               {name:'FAQs',link:'/faq-page.html',active:''}]; 
 
-$("#headerSec").html('<header id="wm-header" class="wm-header-one" style="z-index: 1 !important;position: relative;">'+
+var socialIcons = '<div class="icon-bar">';
+socialIcons +='<a href="javascript:void(0);" class="facebook"><i class="fa fa-facebook"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="twitter"><i class="fa fa-twitter"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="google"><i class="fa fa-google"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="linkedin"><i class="fa fa-linkedin"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="youtube"><i class="fa fa-youtube"></i></a>';
+socialIcons +='</div>';
+ 
+$('#socialIcons').html(socialIcons);
+
+$("#headerSec").html(socialIcons+'<header id="wm-header" class="wm-header-one" style="z-index: 1 !important;position: relative;">'+
             '<div class="wm-topstrip">'+
                 '<div class="container">'+
                     '<div class="row">'+
@@ -105,20 +115,6 @@ $("#footerSec").html('<footer id="wm-footer" class="wm-footer-one">'+
                                 '<a href="#" class="wmicon-social4"></a>'+
                                 '<a href="#" class="wmicon-social3"></a>'+
                             '</div>'+
-                        '</aside>'+
-                        '<aside class="widget widget_archive col-md-2" hidden>'+
-                            '<div class="wm-footer-widget-title">'+
-                                '<h5>Quick Links</h5>'+
-                            '</div>'+
-                            '<ul>'+
-                                '<li><a href="#">Our Latest Events</a></li>'+
-                                '<li><a href="#">Our Courses</a></li>'+
-                                '<li><a href="#">About Us</a></li>'+
-                                '<li><a href="#">FAQ</a></li>'+
-                                '<li><a href="#">404 Page</a></li>'+
-                                '<li><a href="#">Gallery</a></li>'+
-                                '<li><a href="#">All Instructors</a></li>'+
-                            '</ul>'+
                         '</aside>'+
                         '<aside class="widget widget_twitter col-md-4">'+
                             '<div class="wm-footer-widget-title">'+
