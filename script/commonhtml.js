@@ -21,11 +21,11 @@ if(window.location.href.indexOf('/admin')!=-1) {
 }
 
 var socialIcons = '<div class="social-icon-bar">';
-socialIcons +='<a href="javascript:void(0);" class="facebook"><i class="fa fa-facebook"></i></a>';
-socialIcons +='<a href="javascript:void(0);" class="twitter"><i class="fa fa-twitter"></i></a>';
-socialIcons +='<a href="javascript:void(0);" class="google"><i class="fa fa-google"></i></a>';
-socialIcons +='<a href="javascript:void(0);" class="linkedin"><i class="fa fa-linkedin"></i></a>';
-socialIcons +='<a href="javascript:void(0);" class="youtube"><i class="fa fa-youtube"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="fb"><i class="fa fa-facebook"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="tw"><i class="fa fa-twitter"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="go"><i class="fa fa-google"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="li"><i class="fa fa-linkedin"></i></a>';
+socialIcons +='<a href="javascript:void(0);" class="yt"><i class="fa fa-youtube"></i></a>';
 socialIcons +='</div>';
 
 var webSiteMenus = '<div class="collapse navbar-collapse" id="navbar-collapse-1">'+
