@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>RAMSHETH THAKUR HIGHER SECONDARY VIDYALAYA,KHARGHAR</title>
+	<script>
+		if (location.protocol == 'http:'){
+		  location.href = location.href.replace("http","https");
+		}
+	</script>
     <link rel="icon" href="./images/Logo.PNG" sizes="32x32" />
 
     <!-- Css Files -->
@@ -386,6 +391,7 @@
     <script type="text/javascript" src="./script/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="./script/functions.js"></script>
     <script type="text/javascript" src="./script/commonhtml.js"></script>
+	 <script type="text/javascript" src="./script/myscript.js" ></script>
     <script>
         var slideIndex = 0;
         slideShow();
@@ -432,6 +438,10 @@
             x[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " w3-white";
         }
+		if(window.location.search == '?appview'){
+			sessionStorage.setItem('appview','true'); 
+			console.log('Android app view')
+		}
     </script>
 
 

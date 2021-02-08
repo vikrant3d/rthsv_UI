@@ -157,7 +157,7 @@ var footer = '<footer id="wm-footer" class="wm-footer-one">'+
                                 '<ul>'+
                                     '<li><i class="wm-color wmicon-pin"></i> PLOT NO.1,SECTOR 33, KHARGHAR,NAVI MUMBAI -  410210</li>'+
                                     '<li><i class="wm-color wmicon-phone"></i> +91 932-338-2271 <br /> +91 932-360-9161 <br /> +91 887-974-7375</li>'+
-                                    '<li><i class="wm-color wmicon-letter"></i><a href="mailto:principalrtshv@gmail.com">principalrtshv@gmail.com</a></li>'+
+                                    '<li><i class="wm-color wmicon-letter"></i><a href="mailto:principal@rtshv.com">principal@rtshv.com</a></li>'+
                                 '</ul>'+
                                 '<div class="wm-footer-icons">'+
                                     '<a href="#" class="wmicon-social5"></a>'+
@@ -178,9 +178,10 @@ var footer = '<footer id="wm-footer" class="wm-footer-one">'+
                                         '<p>Check out my New PSD: FashionPlus - Fashion eCommerce: <a href="#">pic.twitter.com/xc445Ghyt</a></p>'+
                                         '<time datetime="2008-02-14 20:00" class="wm-color">4 hrs ago</time>'+
                                     '</li>'+
-                                    '<li>'+
-                                        '<p>MedicAid - Medical Template @ThemeForest: <a  href="#">pic.twitter.com/xcVlq542wfER</a></p>'+
-                                        '<time datetime="2008-02-14 20:00" class="wm-color">1 day ago</time>'+
+                                    '<li class="playStoreIcon">'+
+                                        '<a target="_blank" href="https://play.google.com/store/apps/details?id=com.rthsv&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">'+
+											'<img src="'+imgpt+'/images/social/applogo.png" style="height:60px;border-radius:10px" >'+
+										'</a>'+
                                     '</li>'+
                                 '</ul>'+
                             '</aside>'+
