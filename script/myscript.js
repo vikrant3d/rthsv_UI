@@ -1,10 +1,10 @@
 var contextPathStud = "https://69txog4rl8.execute-api.ap-south-1.amazonaws.com/dev/S/";
 var slideIndex = 0;
 var timeoutvar;
-hideAppDetails()
+setTimeout(hideAppDetails, 200);
 function hideAppDetails(){
 	if(sessionStorage.getItem('appview') == 'true'){
-		$(".playStoreIcon").hide();
+		$(".nonAppviewClass").hide();
 	}
 }
 function showSlides() {
@@ -128,6 +128,16 @@ function displayNoticeData(obj) {
 	if (isNotice == 1)
 		$("#noticeDisplay").html("<h1 class=\"text-center\"> No Notice is available </h1>");
 	return false;
+}
+
+function downloadNoticeApp(obj){
+	const linkSource = "data:application/pdf;base64,"+$(obj).attr('data-respone');
+	const downloadLink = document.createElement("a");
+	const fileName = "abc.pdf";
+	downloadLink.href = linkSource;
+	downloadLink.download = fileName;
+	downloadLink.click();﻿
+	
 }
 
 function viewStudentResult(obj) {
