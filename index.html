@@ -334,29 +334,8 @@
                             <div class="wm-fancytitle-two wm-align-left">
                                 <h2>Testimonials</h2>
                             </div>
-                            <div class="wm-thumb-testimonial">
-                                <div class="wm-thumb-testimonial-layer">
-                                    <figure><a href="javascript:void(0);"><img
-                                                src="extra-images/testimonial-slider-1.jpg" alt=""></a>
-                                    </figure>
-                                    <div class="thumb-testimonial-text">
-                                        <h4><a href="javascript:void(0);">Jennifer Cameron</a></h4>
-                                        <span class="wm-color-two">-Guitar Student</span>
-                                        <p>I just wanted to thank you for the beautiful guides! We are in the midst of
-                                            Family Weekend check-in and have had RAVE from our parents!</p>
-                                    </div>
-                                </div>
-                                <div class="wm-thumb-testimonial-layer">
-                                    <figure><a href="javascript:void(0);"><img
-                                                src="extra-images/testimonial-slider-2.jpg" alt=""></a>
-                                    </figure>
-                                    <div class="thumb-testimonial-text">
-                                        <h4><a href="javascript:void(0);">Guillermo L. Kelly</a></h4>
-                                        <span class="wm-color-two">-Guitar Student</span>
-                                        <p>I just wanted to thank you for the beautiful guides! We are in the midst of
-                                            Family Weekend check-in and have had RAVE from our parents!</p>
-                                    </div>
-                                </div>
+                            <div class="wm-thumb-testimonial" id="testimonialContent">
+                                
                             </div>
                         </div>
 
@@ -394,6 +373,7 @@
 	<script type="text/javascript" src="./script/myscript.js" ></script>
     <script>
         showSlides();
+		getTestimonialData();
 		if(window.location.search == '?appview'){
 			sessionStorage.setItem('appview','true'); 
 			console.log('Android app view')

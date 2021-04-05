@@ -362,3 +362,49 @@ function confirmPaymentData() {
 	$("#confirmModal").modal("show");
 	initLData();
 }
+
+function getTestimonialData(){
+	var mainMap = {};
+	
+	var userMap = {};
+	userMap["name"]="Snehal K Salunkhe";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2019";
+	userMap["content"]="My journey over these two years has been amazing. During my school times, I struggled a lot with my active participation in various events, having a good interaction with my school as well as getting good grades. The two years of my academic life in this institution was very nice.";
+	mainMap["1"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Rafat Karbhari";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2019";
+	userMap["content"]="The Teacher are well qualified and fair in there work, The college impose strict rules on both faculty and student to maintain uniformity and discpline, Also college maintain balance between the acadeny and extracurricular activities, which makes student easy.";
+	mainMap["2"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Tisha";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="Best College, they motivates students not only to excel in studies but also in gaming and other cultural activities and is favorable for any kind of students to get easy accustomed, disciplined through friendly environment.Teachers are very cooperative in nature.";
+	mainMap["3"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Shamila ";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="The College is placed where you will get best education.This help me to develop my skills and education content";
+	mainMap["4"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Shamila ";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="The College is placed where you will get best education.This help me to develop my skills and education content";
+	mainMap["5"]=userMap;
+	
+	$.each(mainMap, function(key, value) {   
+		$("#testimonialContent").append('<div class="wm-thumb-testimonial-layer">'+
+			'<figure><a href="javascript:void(0);"><img src="images/testimonial/'+key+'.jpg" alt=""></a>'+
+			'</figure>'+
+			'<div class="thumb-testimonial-text">'+
+				'<h4><a href="javascript:void(0);">'+value["name"]+'</a></h4>'+
+				'<span class="wm-color-two">'+value["batch"]+'</span>'+
+				'<p>'+value["content"]+'</p>'+
+			'</div>'+
+		'</div>');
+	});
+}
