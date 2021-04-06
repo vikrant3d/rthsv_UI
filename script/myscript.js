@@ -441,7 +441,7 @@ function initFAQ(){
 }
 function initLabImg(){
 	for(var i =1;i<=26;i++){
-		 $("#labimg").append('<li><a title="" data-rel="prettyPhoto[gallery1]" href="'+imgpt+'/images/lab/large/'+i+'.jpg"><img src="'+imgpt+'/images/lab/small/'+i+'.jpg" alt="" ></a></li>');
+		 $("#labimg").append('<li><a title="" data-rel="prettyPhoto[gallery1]" href="'+imgpt+'/images/lab/large/'+i+'.JPG"><img src="'+imgpt+'/images/lab/small/'+i+'.JPG" alt="" ></a></li>');
 	}
 }
 
