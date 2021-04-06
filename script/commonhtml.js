@@ -39,6 +39,7 @@ var webSiteMenus = '<div class="collapse navbar-collapse" id="navbar-collapse-1"
                                     '<li page="Exam Result"><a onClick="openPage(this)" data-href="'+imgpt+'/ranking.html">Student Ranking</a></li>'+
                                 '</ul>'+
                             '</li>'+
+							'<li class="" page="laboratory"><a onClick="openPage(this)" data-href="'+imgpt+'/lab.html">Laboratory</a></li>'+
                             '<li class="" page="Contact Us"><a onClick="openPage(this)" data-href="'+imgpt+'/contact-us.html">Contact Us</a></li>'+
                             '<li class="" page="About Us"><a data-href="aboutus">About Us</a>'+
                                 '<ul class="wm-dropdown-menu">'+
@@ -49,7 +50,7 @@ var webSiteMenus = '<div class="collapse navbar-collapse" id="navbar-collapse-1"
                             '</li>'+
                             '<li class="" page="Rules Page"><a onClick="openPage(this)" data-href="'+imgpt+'/rules-page.html">Rules &amp; Regulations </a></li>'+
                             '<li class="" page="FAQs"><a onClick="openPage(this)" data-href="'+imgpt+'/faq-page.html">FAQ&acute;s</a></li>'+
-                            '<li class="" page="FAQs"><a  href="javascript:void(0);">Payment</a></li>'+
+                           // '<li class="" page="FAQs"><a  href="javascript:void(0);">Payment</a></li>'+
                         '</ul>'+
                     '</div>';
 
@@ -202,7 +203,7 @@ var footer = '<footer id="wm-footer" class="wm-footer-one">'+
                                 '</div>'+
                                 '<ul class="gallery">'+
                                     getFooterImg()
-									'</ul>'+
+								'</ul>'+
                             '</aside>'+
                         '</div>'+
                     '</div>'+
