@@ -422,18 +422,19 @@ function initFAQ(){
 	map["What are the documents to be attached with admission form for CBSE and ICSE board students?"]="1.Online generated form no1 and form no2,<br>2. Admission form, <br>3.Passport size photos 3, <br>4. X mark sheet (original) with 3 Xerox copies, <br>5. X leaving certificate (original) with 3 Xerox,  <br>6. 3 Xerox of Aadhar Card, <br>7.3 Caste certificate Xerox and<br>8. Migration certificate (original) and 2 Xerox.<br>";
 	map["Can we change subjects later?"]="No. Subjects once selected cannot be changed.";
 	
-	
-	$.each(map, function(key, value) {   
+	var i=0;
+	$.each(map, function(key, value) {  
+		i++;
 		$("#accordion").append('<div class="panel panel-default">'+
-			'<div class="panel-heading" role="tab" id="headingOne">'+
+			'<div class="panel-heading" role="tab" id="heading'+i+'">'+
 				'<h4 class="panel-title">'+
 					'<a role="button" data-toggle="collapse"'+
-						'data-parent="#accordion" href="#collapseOne"'+
-						'aria-expanded="true" aria-controls=" collapseOne">'+key+'</a>'+
+						'data-parent="#accordion" href="#collapse'+i+'"'+
+						'aria-expanded="true" aria-controls=" collapse'+i+'">'+key+'</a>'+
 				'</h4>'+
 			'</div>'+
-			'<div id="collapseOne" class="panel-collapse collapse in"'+
-				'role="tabpanel" aria-labelledby="headingOne">'+
+			'<div id="collapse'+i+'" class="panel-collapse collapse in"'+
+				'role="tabpanel" aria-labelledby="heading'+i+'">'+
 				'<div class="panel-body">'+value+'</div>'+
 			'</div>'+
 		'</div>');
