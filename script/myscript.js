@@ -451,7 +451,7 @@ function generateEventMap(){
 	map["TeachersDay"]="Teachers Day,2016-17#6,2017-18#5,2018-19#33,2019-20#62";
 	map["TraditionalDay"]="Traditional Day,2016-17#4,2018-19#36";
 	map["YogaDay"]="Yoga Day,2017-18#5,2018-19#28";
-	map["AnnualDay"]="Annual Day,2016-17#2,2017-18#8";
+	map["AnnualDay"]="Annual Day,2016-17#2,2017-18#7";
 	map["OrientationDay"]="Orientation Day,2018-19#1,2019-20#27";
 	map["PriceDistrubition"]="Price Distrubition,2016-17#8,2017-18#8";
 	map["Rakhi"]="Rakhi Competation,2018-19#10";
