@@ -390,12 +390,6 @@ function initTestimonialData(){
 	userMap["content"]="The College is placed where you will get best education.This help me to develop my skills and education content";
 	mainMap["4"]=userMap;
 	
-	var userMap = {};
-	userMap["name"]="Shamila ";
-	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
-	userMap["content"]="The College is placed where you will get best education.This help me to develop my skills and education content";
-	mainMap["5"]=userMap;
-	
 	$.each(mainMap, function(key, value) {   
 		$("#testimonialContent").append('<div class="wm-thumb-testimonial-layer">'+
 			'<figure><a href="javascript:void(0);"><img src="images/testimonial/'+key+'.jpg" alt=""></a>'+

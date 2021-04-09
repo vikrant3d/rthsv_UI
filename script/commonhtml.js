@@ -40,7 +40,6 @@ var webSiteMenus = '<div class="collapse navbar-collapse" id="navbar-collapse-1"
                                 '</ul>'+
                             '</li>'+
 							'<li class="" page="laboratory"><a onClick="openPage(this)" data-href="'+imgpt+'/lab.html">Laboratory</a></li>'+
-                            '<li class="" page="Contact Us"><a onClick="openPage(this)" data-href="'+imgpt+'/contact-us.html">Contact Us</a></li>'+
                             '<li class="" page="About Us"><a data-href="aboutus">About Us</a>'+
                                 '<ul class="wm-dropdown-menu">'+
                                     '<li page="Our Inspiration"><a onClick="openPage(this)" data-href="'+imgpt+'/our-inspiration.html">Our Inspiration</a></li>'+
@@ -50,7 +49,7 @@ var webSiteMenus = '<div class="collapse navbar-collapse" id="navbar-collapse-1"
                             '</li>'+
                             '<li class="" page="Rules Page"><a onClick="openPage(this)" data-href="'+imgpt+'/rules-page.html">Rules &amp; Regulations </a></li>'+
                             '<li class="" page="FAQs"><a onClick="openPage(this)" data-href="'+imgpt+'/faq-page.html">FAQ&acute;s</a></li>'+
-                           // '<li class="" page="FAQs"><a  href="javascript:void(0);">Payment</a></li>'+
+                            '<li class="" page="Contact Us"><a onClick="openPage(this)" data-href="'+imgpt+'/contact-us.html">Contact Us</a></li>'+
                         '</ul>'+
                     '</div>';
 
