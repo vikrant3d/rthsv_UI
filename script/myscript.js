@@ -1,6 +1,8 @@
 var contextPathStud = "https://69txog4rl8.execute-api.ap-south-1.amazonaws.com/dev/S/";
 var slideIndex = 0;
 var timeoutvar;
+var inner = document.getElementById("inner");
+var imgpt = inner == null ? "." : "..";
 
 function showSlides() {
 	var i;
@@ -375,24 +377,60 @@ function initTestimonialData(){
 	var userMap = {};
 	userMap["name"]="Rafat Karbhari";
 	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2019";
-	userMap["content"]="The Teacher are well qualified and fair in there work, The college impose strict rules on both faculty and student to maintain uniformity and discpline, Also college maintain balance between the acadeny and extracurricular activities, which makes student easy.";
+	userMap["content"]="The Teacher are well qualified and fair in there work, The college impose strict rules on both faculty and student to maintain uniformity and discpline, Also college maintain balance between the acadeny and extracurricular activities, which makes student easy.The Infrastructure of this campus is mind-blowing.The practical labs are well equipped.The library offers you many options.And the memories in the canteen will always remind you this place.One more point to add is natural beauty surrounding the campus is mesmerizing.";
 	mainMap["2"]=userMap;
 	
 	var userMap = {};
 	userMap["name"]="Tisha";
 	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
-	userMap["content"]="Best College, they motivates students not only to excel in studies but also in gaming and other cultural activities and is favorable for any kind of students to get easy accustomed, disciplined through friendly environment.Teachers are very cooperative in nature.";
+	userMap["content"]="Best College, they motivates students not only to excel in studies but also in gaming and other cultural activities and is favorable for any kind of students to get easy accustomed, disciplined through friendly environment.Teachers are very cooperative in nature.This place has done that to me and I am very sure that anyone who comes to this place will be a different and a better individual once they leave the gates for good.";
 	mainMap["3"]=userMap;
 	
 	var userMap = {};
 	userMap["name"]="Shamila ";
 	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
-	userMap["content"]="The College is placed where you will get best education.This help me to develop my skills and education content";
+	userMap["content"]="The time I spend at R.T.H.S.V was El Dorado. The management of college was extremely zealous in the application of regulations. Most of the students & teachers are very eager & enthusiastic avid readers. Teachers at R.T.H.S.V provide bolster confidence to students. You have to be an attentive, empathic listener if you want your grades high. My reminiscence of college days will overcome with acute nostalgia for my days at college. ";
 	mainMap["4"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Mariyam ";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="Being a student at J.B.S.P Sanstha's 'Ramsheth Thakur Higher Secondary Vidyalaya,Kharghar' has been a surreal experience.Almost two years I spent in this campus as a Science student.I learned so many things here.There's been not only academics but also extra-curricular activities like dancing,singing, sports,elocution,placard,rangoli,mehendi, greeting cards and many more.And I realised that after,at the end of this journey I was completely different person,more confident,self-dependent,able to do things on my own,able to face the World,take on challenges and always smile.The whole staff of teachers and even our Principal played major role in this journey. Teachers over here are really amazing. They are like second mother.And it was not only a college,it was our second home with many caring mothers.";
+	mainMap["5"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Kashmiri";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="My Two Years at Ramseth Thakur College have been Excellent and a memory to cherish for a lifetime. All Teachers and staff are professional, Helpul,kind and friendly. Yes i said friendly because my Teachers have Taught me lessons not only from the Books, but also from LIFE. That if we Face any Hard phase then how we should conquer it, I took Admission  and to be honest have learnt perfect things at correct age,I Took Science Stream, but You also have an Option of choosing Commerce too ";
+	mainMap["6"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Rahul Suryavanshi";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2017-2018";
+	userMap["content"]="College environment for study purpose is really excellent they have well equipped lab for all necessary subject the teaching staff is really supportive and helpful in case students find any difficulty non teaching staff is also really co-operative in all the activities";
+	mainMap["7"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Shruti Telawane";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2020";
+	userMap["content"]="I'm from Kharghar and I had studied in Ramsheth Thakur College of Commerce and Science from 2018-20. It's a great place for students. All the teachers and staffs are friendly and helpful. 2 years in RTHSV College not only teaches us our syllabus but also helps us in various activities such as social, cultural, etc. All the labs and their respective lab assistant are too good even the college has such a big ground for sports activities. I along with my friends enjoyed a lot studying in RTHSV College,Kharghar.";
+	mainMap["8"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Rachana Hiwale";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2020";
+	userMap["content"]="I Miss. Rachana Hiwale would like to express my gratitude towards my college and teachers for helping me achieving my score. There were so many things about my time at the college, including how fantastically knowledgeable my teachers were. Not only academic but also lots of different activities on campus allowed me enhance my talent and have an overall development. Ramsheth Thakur college helped me grow career-wise but i have also gained values and memories, I will cherish for life.";
+	mainMap["9"]=userMap;
+	
+	var userMap = {};
+	userMap["name"]="Sachin Patil";
+	userMap["batch"]="&nbsp;&nbsp;- Batch 2018-2020";
+	userMap["content"]="My Two years at RTHSV College were great and a memory to cherish for lifetime.Here the Atmosphere is full of motivation and innovation. All the faculties are enthusiastic and always ready to help. It was full of learning and grooming oneself. Overall it was a great experience and lifetime memory at RTHSV college.";
+	mainMap["10"]=userMap;
 	
 	$.each(mainMap, function(key, value) {   
 		$("#testimonialContent").append('<div class="wm-thumb-testimonial-layer">'+
-			'<figure><a href="javascript:void(0);"><img src="images/testimonial/'+key+'.jpg" alt=""></a>'+
+			'<figure><a href="javascript:void(0);"><img src="'+imgpt+'/images/testimonial/'+key+'.jpg" alt=""></a>'+
 			'</figure>'+
 			'<div class="thumb-testimonial-text">'+
 				'<h4><a href="javascript:void(0);">'+value["name"]+'</a></h4>'+
@@ -439,6 +477,13 @@ function initLabImg(){
 		 $("#labimg").append('<li><a title="" data-rel="prettyPhoto[gallery1]" href="'+imgpt+'/images/lab/large/'+i+'.JPG"><img src="'+imgpt+'/images/lab/small/'+i+'.JPG" alt="" ></a></li>');
 	}
 }
+function initLabImgMobile(){
+	for(var i =1;i<=26;i++){
+		 $("#labimg").append('<div class="wm-thumb-testimonial-layer">'+
+			'<figure><a href="javascript:void(0);"><img src="'+imgpt+'/images/lab/large/'+i+'.JPG"" style="margin-bottom: 27px;"></a></figure>'+
+			'</div>');
+	}
+}
 
 function generateEventMap(){
 	var map={}
@@ -461,7 +506,7 @@ function initEvents(){
 		$("#eventsid").append('<li class="col-md-4">'+
 			'<figure>'+
 				'<a href="events.html?'+key+'">'+
-				'<img style="height:180px" src="./images/events/'+key+'.jpg"  alt="'+key+'" title="'+key+'"></a>'+
+				'<img style="height:180px" src="'+imgpt+'/images/events/'+key+'.jpg"  alt="'+key+'" title="'+key+'"></a>'+
 			'</figure>'+
 			'<div class="wm-newsgrid-text">'+
 				'<h5><a href="javascript:void(0);" class="wm-color" alt="'+key+'" title="'+key+'">'+value[0]+'</a></h5>'+
@@ -491,4 +536,56 @@ function initEventsDetails(){
 		data + '</ul></div>';
 		$("#eventsData").append(data);
 	}		
+}
+function initEventsDetailsMobile(){
+	var map = generateEventMap();
+	var s = window.location.search;
+	var key = s.substr(1,s.length);
+	var mapData = map[key];
+	var value=mapData.split(",");
+	$(".eventName").html(value[0]);
+	
+	for(var i=1;i<value.length;i++){
+	var val2 = value[i].split("#");	
+	var data = '<div class="wm-title-typoelements wm-detail-editore">'+
+		'<h2>'+value[0]+'&nbsp;<span>'+val2[0]+'</span></h2>'+
+	'</div>'+
+	'<div class="widget widget_gallery col-md-12">'+
+		'<ul class="wm-thumb-testimonial" id="labimg">';			
+			for(var j=1;j<=parseInt(val2[1]);j++){
+				
+				data = data + '<div class="wm-thumb-testimonial-layer">'+
+			'<figure><a href="javascript:void(0);"><img src="'+imgpt+'/images/events/'+val2[0]+'/'+key+'/'+j+'.jpg" style="margin-bottom: 27px;"></a></figure>'+
+			'</div>';
+				
+			}
+		data + '</ul></div>';
+		$("#eventsData").append(data);
+	}
+}
+function initNotificationMessage(){
+	$("#wait").show();
+	$.ajax({
+		type: 'POST',
+		url: contextPathStud + "getAllNotification",
+		success: function (response1) {
+			$(response1).each(function(i,obj){				
+				$("#notifiMsg").append('<li class="col-md-12">'+
+					'<div class="wm-event-medium-wrap">'+
+						'<div class="wm-eventmedium-text" style="padding: 0px 0px 0px 0px;">'+
+							'<h5><a href="#" style="color:green">'+$(obj).attr('title')+' : '+$(obj).attr('dateTime')+'</a></h5>'+
+							'<p>'+$(obj).attr('message')+'.</p>'+
+						'</div>'+
+					'</div>'+
+				'</li>');						
+			});	
+			$("#wait").hide();			
+		},
+		error: function (response) {
+			alert("Error while getting Notices Data.Please try after some time");
+		}
+	});
+	return false;
+	
+	
 }
